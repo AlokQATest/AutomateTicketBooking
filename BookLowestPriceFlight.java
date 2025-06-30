@@ -74,7 +74,8 @@ public class BookLowestPriceFlight {
 				System.out.println("Test Passed");
 			}
 			
-			
+			//Closing the driver
+			driver.close();
 	}
 
 }
