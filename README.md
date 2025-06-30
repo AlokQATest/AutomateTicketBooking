@@ -2,12 +2,18 @@
 
 Feature: Book Ticket
 
-  I want to book a ticket in SpiceJet
+  I want to book a ticket in BlazeDemo
 
-  Scenario: Book Ticket from Delhi to Kolkata
+  Scenario: Book Ticket from Philadelphia to Rome
 
-    Given I Open URL "https://www.spicejet.com/" and launch driver
+    Given I Open URL "https://blazedemo.com/index.php" and launch driver
 
-    When I search ticket from "Delhi" to "Kolkata" Depart on "28-June-2025" return on "29-June-2025"
+    When I search ticket from "Philadelphia" to "Rome" Depart
 
+    Choose the flight with lowest price
+
+    Filling the booking form and submitting it
+    
+    Validating the final message
+    
     Then I close driver
